@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #999;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #0073e6;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML5 Content & Form Demo</h1>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>📋 Favorite Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C#</li>
+      <li>Go</li>
+    </ul>
+
+    <h3>Steps to Build a Web Page</h3>
+    <ol>
+      <li>Plan the structure</li>
+      <li>Write semantic HTML</li>
+      <li>Style with CSS</li>
+      <li>Enhance with JavaScript</li>
+    </ol>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>📊 Course Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML5 & CSS Basics</td>
+          <td>10:00 AM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>JavaScript Fundamentals</td>
+          <td>11:00 AM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Python Basics</td>
+          <td>2:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>🎬 Multimedia Example</h2>
+    <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
+    </audio>
+    <video controls width="400">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+  </section>
+
+  <!-- Section 4: HTML5 Form -->
+  <section>
+    <h2>📝 Registration Form</h2>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="12">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select your country --</option>
+          <option value="Kenya">Kenya</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="newsletter"> Subscribe to newsletter
+        </label>
+        <label>
+          <input type="radio" name="membership" value="basic" required> Basic
+        </label>
+        <label>
+          <input type="radio" name="membership" value="premium"> Premium
+        </label>
+      </fieldset>
+
+      <button type="submit">Register ✅</button>
+    </form>
+  </section>
+
+</body>
+</html>
